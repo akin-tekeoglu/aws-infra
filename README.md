@@ -4,7 +4,11 @@ This project contains aws infra code for my personal projects. It is written wit
 
 ## Online shop
 
-This directory contains lambda functions and api definitions for online shop applcation
+Lambda functions and api definitions for online shop applcation
+
+## PWA movies
+
+Amplify app for pwa-movies project
 
 ## Lambda bootstrap functions
 

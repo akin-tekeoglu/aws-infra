@@ -8,12 +8,11 @@ import (
 	"github.com/aws/jsii-runtime-go"
 )
 
-func NewOnlineShopLambda(scope constructs.Construct, id string, props *awscdk.StackProps) awscdk.Stack {
+func NewOnlineShopStack(scope constructs.Construct, id string, props *awscdk.StackProps) {
 	stack := awscdk.NewStack(scope, &id, props)
 	awslambda.NewFunction(stack, jsii.String("Product"), &awslambda.FunctionProps{
 		Runtime: awslambda.Runtime_GO_1_X(),
-		Code:    awslambda.Code_FromAsset(jsii.String("lambda-bootstrap-functions/go/out"), &awss3assets.AssetOptions{}),
+		Code:    awslambda.Code_FromAsset(jsii.String("lambda_bootstrap_functions/go/out"), &awss3assets.AssetOptions{}),
 		Handler: jsii.String("main"),
 	})
-	return stack
 }

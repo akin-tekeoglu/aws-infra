@@ -19,4 +19,6 @@
 cdk.out
 
 # Bootstrap functions
-lambda-bootstrap-functions/**/out
+lambda_bootstrap_functions/**/out
+
+.env
