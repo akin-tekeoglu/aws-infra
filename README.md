@@ -1,12 +1,15 @@
-# Welcome to your CDK Go project!
+# AWS Infra
 
-This is a blank project for CDK development with Go.
+This project contains aws infra code for my personal projects. It is written with Go and AWS CDK
 
-The `cdk.json` file tells the CDK toolkit how to execute your app.
+## Online shop
 
-## Useful commands
+This directory contains lambda functions and api definitions for online shop applcation
 
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
- * `go test`         run unit tests
+## Lambda bootstrap functions
+
+These are the placeholder functions for initial deployments
+
+### Deployment
+
+`make deploy`
